@@ -7,7 +7,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
 </head>
 <body>
 <script>
-//Ğ£ÑéÓÃ»§Ãû
+//æ ¡éªŒç”¨æˆ·å
 function checkUsername()
 {
 	var username = document.getElementById("username");
@@ -17,7 +17,7 @@ function checkUsername()
 	var flag = username.checkValidity();
 	if(!flag)
 	{
-		result.innerHTML = "ÓÃ»§Ãû¸ñÊ½Ó¦ÎªÓ¢ÎÄºÍÊı×Ö×éºÏ£¬ÇÒ³¤¶È´óÓÚ6";
+		result.innerHTML = "ç”¨æˆ·åæ ¼å¼åº”ä¸ºè‹±æ–‡å’Œæ•°å­—ç»„åˆï¼Œä¸”é•¿åº¦å¤§äº6";
 	}
 	else
 	{
@@ -25,22 +25,22 @@ function checkUsername()
 	}
 }
 
-//×¢²á·½·¨
+//æ³¨å†Œæ–¹æ³•
 function checkReg()
 {
 	var username = document.getElementById("username").value;
 	var email = document.getElementById("email").value;
 	var num = document.getElementById("num").value;
-	if(document.getElementById("username").checkValidity()//ÅĞ¶ÏÓÃ»§ÃûÊÇ·ñÍ¨¹ıĞ£Ñé
-	  &&document.getElementById("email").checkValidity()  //ÅĞ¶Ïµç×ÓÓÊÏäÊÇ·ñÍ¨¹ıĞ£Ñé
-	  &&document.getElementById("num").checkValidity()    //ÅĞ¶ÏÑ§ºÅÊÇ·ñÍ¨¹ıĞ£Ñé
+	if(document.getElementById("username").checkValidity()//åˆ¤æ–­ç”¨æˆ·åæ˜¯å¦é€šè¿‡æ ¡éªŒ
+	  &&document.getElementById("email").checkValidity()  //åˆ¤æ–­ç”µå­é‚®ç®±æ˜¯å¦é€šè¿‡æ ¡éªŒ
+	  &&document.getElementById("num").checkValidity()    //åˆ¤æ–­å­¦å·æ˜¯å¦é€šè¿‡æ ¡éªŒ
 	)
 	{
 		alert(
-			'È·ÈÏ×¢²áĞÅÏ¢\n'+
-			'ÓÃ»§Ãû£º'+username+'\n'+
-			'µç×ÓÓÊÏä£º'+email+'\n'+
-			'Ñ§ºÅ£º'+num+'\n'
+			'ç¡®è®¤æ³¨å†Œä¿¡æ¯\n'+
+			'ç”¨æˆ·åï¼š'+username+'\n'+
+			'ç”µå­é‚®ç®±ï¼š'+email+'\n'+
+			'å­¦å·ï¼š'+num+'\n'
 		)	
 	}
 }
@@ -48,31 +48,31 @@ function checkReg()
 
 <form>
 <fieldset>
-<legend>Ğ£Ô°Íø×¢²áÒ³Ãæ</legend>
+<legend>æ ¡å›­ç½‘æ³¨å†Œé¡µé¢</legend>
 <center>
 	<table width='100%'>
 		
 		<tr>
-			<td width='20%'>ÓÃ»§Ãû</td>
+			<td width='20%'>ç”¨æˆ·å</td>
 			<td width='40%'><input id="username" type="text" required="true" onblur="checkUsername()" pattern="^(?![a-zA-Z]+$)(?![0-9]+$)[a-zA-Z0-9]{7,}$">
 							<span style="color:red;" id="result" ></span>	
 			</td>
 		</tr>
 		
 		<tr>
-			<td>ÓÊÏä</td>
+			<td>é‚®ç®±</td>
 			<td><input id="email" type="email" required="true" /></td>
 		</tr>
 		
 		<tr>
-			<td>Ñ§ºÅ</td>
+			<td>å­¦å·</td>
 			<td><input   id="num" type="number" required="true" /></td>
 		</tr>
 
 	</table>
 
-	<input type="submit" value="×¢²áĞ£Ô°Íø" onclick="checkReg()">
-	<input type="reset" value="ÖØÖÃ">
+	<input type="submit" value="æ³¨å†Œæ ¡å›­ç½‘" onclick="checkReg()">
+	<input type="reset" value="é‡ç½®">
 </center>
 </fieldset>
 </form>
